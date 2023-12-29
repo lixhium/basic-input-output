@@ -1,8 +1,20 @@
 #include <stdio.h>
+#include <string.h>
+
+void change_x(int *x)
+{
+    *x = 0;
+}
 
 int main()
 {
-    printf("the journey of 1000 step begin with one step, that's probably not the right quote idc\n");
+    int x = 100;
+
+    printf("%d\n", x);
+
+    change_x(&x);
+
+    printf("%d\n", x);
 
     return 0;
 }
